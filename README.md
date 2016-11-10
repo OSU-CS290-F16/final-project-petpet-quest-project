@@ -1,9 +1,9 @@
 **CS 290 Final Project: PetPet Quest**
 
 Team Members:
-● Alexandria (Lexi) Wilson - ID: 932103063
-● Connor Stettler - ID: 932468995
-● Keana Kief - ID: 932044775
+Alexandria (Lexi) Wilson
+Connor Stettler
+Keana Kief
 
 **Description:**
 PetPet Quest is a click based game similar in mechanic to games like Cookie Clicker. After

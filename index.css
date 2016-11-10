@@ -1,0 +1,48 @@
+body {
+	background-color: purple;
+}
+
+
+.pettingStats div p{
+	display: inline;
+	border: 5px;
+	color: yellow;
+}
+
+
+#ThePet {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hitboxContainer {
+	width: 300px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+	flex-direciton: row;
+	flex-wrap: wrap;
+}
+
+.hitbox {
+	display: inline-block;
+	position: relative;
+	height: 152px;
+	width: 304px;
+	bottom: 304px;
+}
+
+
+.hitboxVis {
+	border-style: dashed;
+	border-width: 1px;
+	margin: -1px;
+}
+
+
+
