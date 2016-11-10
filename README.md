@@ -1,11 +1,11 @@
-**CS 290 Final Project: PetPet Quest**
+# CS 290 Final Project: PetPet Quest
 
-Team Members:
-Alexandria (Lexi) Wilson
-Connor Stettler
-Keana Kief
+## Team Members:
+* Alexandria (Lexi) Wilson
+* Connor Stettler
+* Keana Kief
 
-**Description:**
+## Description:
 PetPet Quest is a click based game similar in mechanic to games like Cookie Clicker. After
 logging in to the website the user is taken to their “home” page, which is an image of a living
 room with one of the user’s various pets in it. A sidebar that expands once clicked contains the
@@ -17,7 +17,7 @@ These points can then be used to buy more pets from the store page. If the user 
 pet the pet will be shown as SOLD in the store. More expensive pets generate more points per
 click. The goal is to own every pet.
 
-**Client interface:**
+## Client interface:
 - Login/main screen: collage of pics of once you login, description of website, login
 option, account creation option
 - Account creation page: asks for username, password, email, etc
@@ -39,7 +39,7 @@ sparkles or something)
 - Purchase new pets (there will be a max. number of pets)
 - If the user already owns a pet it is shown as SOLD in store
 
-**Data stored on back end:**
+## Data stored on back end:
 - Users account info (email, username, password)
 - Number of points user has earned, which user can use to purchase bonuses for pet or
 new pet types
