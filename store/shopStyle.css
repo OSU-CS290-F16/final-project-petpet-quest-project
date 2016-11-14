@@ -59,7 +59,14 @@ main {
 }
 
 .awning{
+	
+}
+
+#awningImage{
 	height: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .storefront{
