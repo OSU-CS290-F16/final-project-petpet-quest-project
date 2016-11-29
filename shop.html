@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- tag for shop -->
+		<title>Pet Pet Shop</title> 
+	
+		<link rel="stylesheet" href="shopStyle.css" media="screen">
+	</head>
+	
+	<body>
+		
+		<header>
+			<!-- The header is all nav bar -->
+			<nav>
+				<ul class = "navbar">
+					<!-- Clicking on home takes you to the home page, set user name to take you to profile -->
+					<li class = "navbar-list store"><a href="#">Store</a></li>
+					<li class = "navbar-list logo"><a href = "/">Pet Pet</a></li>
+					<li class = "navbar-list signIn"><span class = "hide"><a href="#"> Sign In </a></span></li>
+					<li class = "navbar-list username"><a href="profile"> Username</a></li>
+					<li class = "navbar-list logOut"> Log Out </li>
+				</ul>
+			</nav>
+			
+		</header>
+		
+		<!--main store section here-->
+		
+		<main>
+			
+			<div class = "storefront">
+				
+				<img src = "storeAwning.png" id="awningImage" width = "1100" height = "300" ></img>
+				
+				<div class = "pets">
+					<section class = "options">
+							<img src = "http://placekitten.com/g/200/300">
+							<p class = "price"> $1000 </p>
+					</section>
+					
+					<section class = "options">
+							<img src = "http://placekitten.com/g/200/300">
+							<p class = "price"> $1500 </p>
+					</section>
+					
+					<section class = "options">
+							<img src = "http://placekitten.com/g/200/300">
+							<p class = "price"> $2000 </p>
+					</section>
+					
+					<section class = "options">
+							<img src = "http://placekitten.com/g/200/300">
+							<p class = "price"> $2500 </p>
+					</section>
+				</div>
+				
+				<div class = "storefront_footer">
+					<p class = "page">
+						<button type="button" class="prev"><img src = "prev.png" height = "50" width = "50"></button>
+						<span class = "page-number">x/y</span> 
+						<button type="button" class="next"><img src = "next.png" height = "50" width = "50"></button>
+					</p>
+					
+				</div>
+				
+				
+			</div>
+			
+		</main>
+	
+		
+		<footer>
+		  <div class="copyright">
+			Copyright &copy; Pet Pet 2016
+		  </div>
+		</footer>
+	
+	
+	</body>
+	
+	<script src="shop.js"></script>
+</html>
