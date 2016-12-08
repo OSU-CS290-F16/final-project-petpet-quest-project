@@ -115,6 +115,32 @@ main {
     border-radius: 5px;
 }
 
+.options_2{
+	background-color: #fdd6b5;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-left: 55px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 200;
+    word-wrap: break-word;
+    border-color: rgb(80, 80, 80);
+    border-style: dashed;
+    border-radius: 5px;
+	display: none;
+}
+
+.options_2 img{
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+	border-style: solid;
+    border-radius: 5px;
+}
+
 .Price{
 	margin-left: 50px;
     background-color: rgba(238, 239, 131, 0.96);
@@ -154,5 +180,28 @@ button{
 	height = 50px;
 }
 
+#modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#view-pet {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+}
+
+.hidden {
+  display: none;
+}
 
 
