@@ -36,22 +36,22 @@
 				<div class = "pets">
 					<section class = "options">
 							<img src = "http://placekitten.com/g/200/300">
-							<p class = "price"> $1000 </p>
+							<button type="button" class="Price">$1000</button>
 					</section>
 					
 					<section class = "options">
 							<img src = "http://placekitten.com/g/200/300">
-							<p class = "price"> $1500 </p>
+							<button type="button" class="Price">$1500</button>
 					</section>
 					
 					<section class = "options">
 							<img src = "http://placekitten.com/g/200/300">
-							<p class = "price"> $2000 </p>
+							<button type="button" class="Price">$2000</button>
 					</section>
 					
 					<section class = "options">
 							<img src = "http://placekitten.com/g/200/300">
-							<p class = "price"> $2500 </p>
+							<button type="button" class="Price">$2500</button>
 					</section>
 				</div>
 				
@@ -76,6 +76,30 @@
 		  </div>
 		</footer>
 	
+	<div id="modal-backdrop" class="hidden"></div>
+    <div id="view-pet" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Add a ToDo</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="todo-input-element required">
+            <label for="todo-input-what">What</label>
+            <input type="text" id="todo-input-what">
+          </div>
+         
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Buy</button>
+        </div>
+
+      </div>
+    </div>
 	
 	</body>
 	
