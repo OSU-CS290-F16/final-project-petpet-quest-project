@@ -59,7 +59,19 @@ app.post('/createAccount', function(req, res){
 	
 	if (docs.length === 0) {
 		mongoDB.collection('users').insert(
-		{"username" : req.body.user, "pass" : req.body.pass}
+		{
+			"username": req.body.user, 
+			"pass": req.body.pass,
+			"petpets": 0,
+			"petpetpoints": 0,
+			"pets": [
+				{
+					"name": "cat",
+					"pets": 0
+				}
+			]
+			
+		}
 		);
 		console.log("Tried to inset into database users")
 		console.log('making new account');
