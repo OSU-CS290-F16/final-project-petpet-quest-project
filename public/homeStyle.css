@@ -21,13 +21,20 @@ header {
   font-size: 2em;
   margin-top: 15px;
   padding: 10px;
+  text-shadow:
+  -1px -1px 0 #FFFFFF,
+   0px -1px 0 #FFFFFF,
+   1px -1px 0 #FFFFFF,
+  -1px 1px 0 #FFFFFF,
+   0px 1px 0 #FFFFFF,
+   1px 1px 0 #FFFFFF;
 }
 
 h1 {
 }
 
 .content {
-  background-image: url("photos/petHomePage.jpg");
+  background-image: url("photos/petHomePage_xsm.jpg");
   height: 100%;
   margin: 0;
   padding: 0;
@@ -115,6 +122,27 @@ a {
 .login-button:hover {
   box-shadow: 5px 5px 10px rgba(189,189,189,1);
   cursor: pointer;
+}
+
+.spacer {
+  height: 200px;
+}
+
+.descriptionOfWebsite {
+  top: 50%;
+  margin: 00px 50px 50px 50px;
+  border-style: solid;
+  border-width: 5px;
+  padding: 5px;
+  background-color: white;
+}
+
+.picturesOfWebsite {
+  margin: 50px;
+  border-style: solid;
+  border-width: 5px;
+  background-color: white;
+  padding: 5px;
 }
 
 footer {

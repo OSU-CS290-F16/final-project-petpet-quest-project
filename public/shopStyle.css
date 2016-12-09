@@ -70,7 +70,7 @@ nav {
 	float: left;
 }
 
-.username{
+.account{
 	float: right;
 }
 
@@ -104,8 +104,8 @@ main {
 }
 
 .pets{
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
     background-color: #ecb4bf;
     width: 800px;
     padding-top: 100px;

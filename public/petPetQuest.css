@@ -127,6 +127,10 @@ main {
 	top: 30%;
 	left: 50%;
 	transform: translate(-50%, 0);
+	background-color: white;
+	border-radius: 20%;
+	padding: 10px;
+	box-shadow: 4px 4px 7px rgba(189,189,189,1);
 }
 
 #thePet {

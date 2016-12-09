@@ -72,7 +72,7 @@ function sold(event){
 				alert("Not enough points");
 				return 0;
 			}
-			value -= 2500; //minus 2500 for cost of cat
+			value -= 2500; //minus 2500 for cost of mouse
 			points.innerHTML = value; //replace points total
 			
 			
@@ -88,6 +88,44 @@ function sold(event){
 		
 		else if(tar.id == "pet5"){
 			value = parseInt(points.innerHTML, 10); //get the points total
+			if(value < 3000){
+				alert("Not enough points");
+				return 0;
+			}
+			value -= 3000; //minus 3000 to buy snake
+			points.innerHTML = value; //replace points total
+			
+			
+			console.log("sold");
+			pet = document.getElementById("sold5");
+			pet.style.display = "block";
+			pet.style.marginTop = "-331px";
+			pet.style.marginLeft = "53px";
+			price[4].removeEventListener("click", sold);
+		
+		}
+		
+		else if(tar.id == "pet6"){
+			value = parseInt(points.innerHTML, 10); //get the points total
+			if(value < 3500){
+				alert("Not enough points");
+				return 0;
+			}
+			value -= 3500; //minus 3500 to buy horse
+			points.innerHTML = value; //replace points total
+			
+			
+			console.log("sold");
+			pet = document.getElementById("sold6");
+			pet.style.display = "block";
+			pet.style.marginTop = "-331px";
+			pet.style.marginLeft = "53px";
+			price[4].removeEventListener("click", sold);
+		
+		}
+		
+		else if(tar.id == "pet7"){
+			value = parseInt(points.innerHTML, 10); //get the points total
 			if(value < 5000){
 				alert("Not enough points");
 				return 0;
@@ -97,7 +135,7 @@ function sold(event){
 			
 			
 			console.log("sold");
-			pet = document.getElementById("sold5");
+			pet = document.getElementById("sold7");
 			pet.style.display = "block";
 			pet.style.marginTop = "-331px";
 			pet.style.marginLeft = "53px";
@@ -128,6 +166,10 @@ function pagePrev(){ //goes to the first page of the shop
 	pet.style.display = "block";
 	pet = document.getElementById("pet5").parentNode;
 	pet.style.display = "none";
+	pet = document.getElementById("pet6").parentNode;
+	pet.style.display = "none";
+	pet = document.getElementById("pet7").parentNode;
+	pet.style.display = "none";
 	
 	pagenumber = document.getElementsByClassName("page-number");
 	pagenumber[0].innerHTML = "1/2";
@@ -153,6 +195,10 @@ function pageNext(){ //goes to the second page of the shop
 	pet = document.getElementById("pet4").parentNode;
 	pet.style.display = "none";
 	pet = document.getElementById("pet5").parentNode;
+	pet.style.display = "block";
+	pet = document.getElementById("pet6").parentNode;
+	pet.style.display = "block";
+	pet = document.getElementById("pet7").parentNode;
 	pet.style.display = "block";
 	
 	pagenumber = document.getElementsByClassName("page-number");
