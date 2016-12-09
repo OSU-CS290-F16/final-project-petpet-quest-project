@@ -2,14 +2,14 @@ var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 44454;
+var port = process.env.PORT || 33995;
 
 var MongoClient = require('mongodb').MongoClient
   , assert = require('assert');
 
 
-var url = 'mongodb://cs290_stettlec:U5WD3mGuB75pzfW@classmongo.engr.oregonstate.edu/cs290_stettlec';
-
+var mongoURL = 'mongodb://cs290_stettlec:U5WD3mGuB75pzfW@classmongo.engr.oregonstate.edu/cs290_stettlec';
+var mongoDB;
 
 
 
@@ -26,12 +26,6 @@ app.get('/', function (req, res) {
 app.get('*', function(req, res) {
   res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
 });
-
-
-app.listen(port, function () {
-  console.log("== Listening on port", port);
-});
-
 
 
 
@@ -61,6 +55,17 @@ var findDocuments = function(db, callback) {
     callback(docs);
   });
 }
+
+MongoClient.connect(mongoURL, function (err, db) {
+  if (err) {
+    console.log("== Unable to make connection to MongoDB Database.")
+    throw err;
+  }
+  mongoDB = db;
+  app.listen(port, function () {
+    console.log("== Listening on port", port);
+  });
+});
 
 /*
 MongoClient.connect(url, function(err, db) {
