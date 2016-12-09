@@ -1,0 +1,34 @@
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+.content {
+	height: 100%;
+	width: 100%;
+	background-image: url("photos/petHomePage_xsm.jpg");
+}
+
+header {
+	padding-top: 270px;
+	text-align: center;
+text-shadow:
+  -1px -1px 0 #FFFFFF,
+   0px -1px 0 #FFFFFF,
+   1px -1px 0 #FFFFFF,
+  -1px 1px 0 #FFFFFF,
+   0px 1px 0 #FFFFFF,
+   1px 1px 0 #FFFFFF;
+}
+
+main {
+	text-align: center;
+}
+
