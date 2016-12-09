@@ -88,11 +88,11 @@ function sold(event){
 		
 		else if(tar.id == "pet5"){
 			value = parseInt(points.innerHTML, 10); //get the points total
-			if(value < 3000){
+			if(value < 5000){
 				alert("Not enough points");
 				return 0;
 			}
-			value -= 3000; //minus 3000 for cost of 2nd bird
+			value -= 5000; //minus 5000 to buy Hess
 			points.innerHTML = value; //replace points total
 			
 			
