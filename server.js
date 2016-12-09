@@ -17,6 +17,8 @@ var mongoDB;
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+
+
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
@@ -34,20 +36,7 @@ app.get('*', function(req, res) {
 });
 
 app.post('/createAccount', function(req, res){
-		// var myCursor = mongoDB.collection('users').find({"username" : "Nate", "password" : "natepass"});
-		// var documentArray = myCursor.toArray();
-		// console.log("Is:  " + documentArray[0])
-		//console.log(mongoDB.collection('users').find({"Username" : "Nate", "password" : "natepass"}));
-		//console.log(mongoDB.collection('users').find({"username" : "Nate"}));
-		
-		// console.log("Should be: " + req.body.user);
-		// var myCursor = mongoDB.collection('users').find({"username" : req.body.user, "password" : req.body.pass});
-		// var documentArray = myCursor.toArray();
-		// var myDocument = documentArray[1];
-		// console.log("Is:  " + documentArray[0])
-		
-		//console.log(req.body.user + ' ' + req.body.pass);
-		//console.log(mongoDB.collection('users').find({"username" : req.body.user}));
+	
 	if ( typeof req.body.user === 'undefined' || typeof req.body.pass === 'undefined') {
 		res.status(400);
 		console.log('incorrect! Missing user or pass.')
@@ -90,14 +79,52 @@ app.post('/createAccount', function(req, res){
 	}
 	});
 	
-
-
-	/*
-	mongoDB.collection('users').insert(
-	{"Username" : "Nate", "Pass" : "natepass"}
-	);
-	console.log("Tried to inset into database users");*/
 });
+
+
+app.post('/login', function(req, res){
+	
+	if ( typeof req.body.user === 'undefined' || typeof req.body.pass === 'undefined') {
+		res.status(400);
+		console.log('incorrect! Missing user or pass.')
+		res.send('Missing user or pass');
+		res.end();
+	}
+	
+	mongoDB.collection('users').find({"username": req.body.user}).toArray(function(err, docs) {
+	assert.equal(err, null);
+
+	if (docs.length === 0) {
+		
+		console.log('No existing user');
+		res.status(400);
+		res.send('No existing user');
+		res.end();
+		
+		}
+		
+	else if (docs[0].pass === req.body.pass) {
+		
+		console.log('Logged in!');
+		res.status(200);
+		res.send('Logged in!');
+		res.end();
+		
+	}
+	else {
+		console.log('User and pass do not match');
+		console.log();
+		console.log();
+		res.status(400);
+		res.send('User and pass do not match');
+		res.end();
+	}
+	});
+	
+	
+	
+});
+
 
 
 /*
