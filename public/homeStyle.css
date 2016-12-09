@@ -17,6 +17,15 @@ header {
   padding: 0;
 }
 
+.title {
+  font-size: 2em;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+h1 {
+}
+
 .content {
   background-image: url("photos/petHomePage.jpg");
   height: 100%;
@@ -46,9 +55,24 @@ main {
   text-align: center;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
+.input-element {
+  text-shadow:
+  -1px -1px 0 #FFFFFF,
+   0px -1px 0 #FFFFFF,
+   1px -1px 0 #FFFFFF,
+  -1px 1px 0 #FFFFFF,
+   0px 1px 0 #FFFFFF,
+   1px 1px 0 #FFFFFF;
+}
+
+.create-account {
+  text-shadow:
+  -1px -1px 0 #FFFFFF,
+   0px -1px 0 #FFFFFF,
+   1px -1px 0 #FFFFFF,
+  -1px 1px 0 #FFFFFF,
+   0px 1px 0 #FFFFFF,
+   1px 1px 0 #FFFFFF;
 }
 
 h2 {
@@ -60,7 +84,7 @@ h2 {
 
 h3 {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   
 }
 
@@ -80,6 +104,12 @@ a {
   color: white;
   background-color: grey;
   border-radius: 10%;
+  margin: 40px;
+  padding: 0;
+  position: relative;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .login-button:hover {

@@ -1,6 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   margin: 0;
+  height: 100%;
   background-color: #c1d1fd;
 }
 
@@ -8,34 +12,53 @@ a {
   text-decoration: none;
 }
 
-nav {
-  background-color: red;
-  color: white;
-  font-size: 46px;
-  font-weight: 200;
+ header {
+  border-style: solid;
+  border-width: 5px;
+  height: 100px;
+  width: 100%;
 }
 
-.logo{
-    margin-left: 600px;
-    margin-top: -100px;
-    border-style: outset;
-    color: #985e09;
-    border-radius: 100px;
-    border-width: 4px;
+nav {
+ background: red;
+ background: -webkit-linear-gradient(left top, red, rgb(186,56,53)); /*Safari*/
+ background: -o-linear-gradient(bottom right, red, rgb(186,56,53)); /*Opera*/
+ background: -moz-linear-gradient(bottom right, red, rgb(186,56,53)); /*Firfox*/
+ background: linear-gradient(to bottom right, red, rgb(186,56,53)); /*Standard*/
+ color: white;
+ height: 100%;
+ font-size: 46px;
+ font-weight: 200;
+ margin-top: -46px;
 }
+
+.petPet-logo{
+ width: 180px;
+ height: 180px;
+ position: relative;
+ left: 45%;
+ margin-bottom: -180px;
+ background-image: url("photos/PetPet_logo_sm.png");
+ box-shadow: 0px 4px 0px rgba(189,189,189,1);
+ background-color: white;
+ border-radius: 93px;
+
+}
+
+.navbar {
+  margin-right: 50px;
+}
+
 .navbar-list {
   list-style-type: none;
   padding: 0;
-  margin: 0 20px;
-}
-
-.navbar-list {
+  margin: 0;
   display: inline;
 }
 
 .navbar-list a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 30px;
   color: white;
 }
 
@@ -58,7 +81,7 @@ nav {
 
 main {
   display: block;
-  padding: 20px 20px 100px 20px;
+  padding: 60px 20px 100px 20px;
   min-height: 300px;
 }
 
