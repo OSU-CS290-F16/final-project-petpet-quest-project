@@ -11,7 +11,7 @@ function sold(event){
 		if(tar.id == "pet1"){
 			value = parseInt(points.innerHTML, 10); //get the points total
 			if(value < 1000){
-				console.log("not enough");
+				alert("Not enough points");
 				return 0;
 			}
 			value -= 1000; //minus 1000 for cost of dog
@@ -30,7 +30,7 @@ function sold(event){
 			
 			value = parseInt(points.innerHTML, 10); //get the points total
 			if(value < 1500){
-				console.log("not enough");
+				alert("Not enough points");
 				return 0;
 			}
 			value -= 1500; //minus 1500 for cost of fish
@@ -49,7 +49,7 @@ function sold(event){
 		else if(tar.id == "pet3"){
 			value = parseInt(points.innerHTML, 10); //get the points total
 			if(value < 2000){
-				console.log("not enough");
+				alert("Not enough points");
 				return 0;
 			}
 			value -= 2000; //minus 2000 for cost of bird
@@ -69,7 +69,7 @@ function sold(event){
 			value = parseInt(points.innerHTML, 10); //get the points total
 			
 			if(value < 2500){
-				console.log("not enough");
+				alert("Not enough points");
 				return 0;
 			}
 			value -= 2500; //minus 2500 for cost of cat
@@ -89,7 +89,7 @@ function sold(event){
 		else if(tar.id == "pet5"){
 			value = parseInt(points.innerHTML, 10); //get the points total
 			if(value < 3000){
-				console.log("not enough");
+				alert("Not enough points");
 				return 0;
 			}
 			value -= 3000; //minus 3000 for cost of 2nd bird
