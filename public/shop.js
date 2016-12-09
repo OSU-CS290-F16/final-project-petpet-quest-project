@@ -72,7 +72,7 @@ function sold(event){
 				alert("Not enough points");
 				return 0;
 			}
-			value -= 2500; //minus 2500 for cost of cat
+			value -= 2500; //minus 2500 for cost of mouse
 			points.innerHTML = value; //replace points total
 			
 			
