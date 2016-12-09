@@ -15,6 +15,14 @@ nav {
   font-weight: 200;
 }
 
+.logo{
+    margin-left: 600px;
+    margin-top: -100px;
+    border-style: outset;
+    color: #985e09;
+    border-radius: 100px;
+    border-width: 4px;
+}
 .navbar-list {
   list-style-type: none;
   padding: 0;
