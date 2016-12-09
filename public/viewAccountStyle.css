@@ -1,3 +1,13 @@
+.box{
+	background-color: rgba(152, 236, 220, 0.93);
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    width: 600px;
+    margin: auto;
+    margin-top: 60px;
+}
+
 .username{
 	display: flex;
     flex-wrap: wrap;
@@ -12,12 +22,16 @@
 .password{
 	display: flex;
     flex-wrap: wrap;
+	margin-bottom: 100px;
 }
 
 .standard{
-	padding-left: 500px;
+	position: relative;
+    margin-left: auto;
 }
 
 .userData{
-	padding-left: 40px;
+	position: relative;
+    margin-right: auto;
+	margin-left: 20px;
 }
