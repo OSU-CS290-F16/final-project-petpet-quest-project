@@ -39,15 +39,11 @@ nav {
 	float: left;
 }
 
-.logOut{
-	float: right;
-}
-
-.signIn{
-	float: right;
-}
-
 .username{
+	float: right;
+}
+
+.logOut{
 	float: right;
 }
 

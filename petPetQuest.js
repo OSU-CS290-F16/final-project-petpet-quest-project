@@ -19,43 +19,43 @@ var hitboxWidthString = "300px";
 
 
 var currentPet = {
-	petName:"Skeleton",
-	petImage: "skeleton.jpg",
-	petDescription:"Will fuck you up.",
+	petName:"Grumpy Cat",
+	petImage: "photos/pet_grumpyCat.png",
+	petDescription:"A grumpy cat.",
 	petsReceived: 0,
-	petPetAction: function() { console.log('Skeleton Pet!'); }
+	petPetAction: function() { console.log('Grumpy Cat Pet!'); }
 };
 
-var skeleton = {
-	petName:"Skeleton",
-	petImage: "skeleton.jpg",
-	petDescription:"Will fuck you up.",
+var dog = {
+	petName:"Dog",
+	petImage: "photos/pet_dog.png",
+	petDescription:"A dog.",
 	petsReceived: 0,
-	petPetAction: function() { console.log('Skeleton Pet!'); }
+	petPetAction: function() { console.log('Dog Pet!'); }
 };
 
-var artorias = {
-	petName:"Artorias",
-	petImage: "artorias.jpg",
-	petDescription:"Abysswalker?",
+var fish = {
+	petName:"Fish",
+	petImage: "photos/pet_fish.png",
+	petDescription: "A fish.",
 	petsReceived: 0,
-	petPetAction: function() { console.log('Artorias Pet!'); }
+	petPetAction: function() { console.log('Fish Pet!'); }
 };
 
-var siegward = {
-	petName:"Siegward",
-	petImage: "siegward.jpg",
-	petDescription:"Grand Onion Knight",
+var bird = {
+	petName:"Bird",
+	petImage: "photos/pet_bird.png",
+	petDescription:"A bird.",
 	petsReceived: 0,
-	petPetAction: function() { console.log('Siegward Pet!'); }
+	petPetAction: function() { console.log('Bird Pet!'); }
 };
 
-var ornstein = {
-	petName:"Ornstein",
-	petImage: "ornstein.jpg",
-	petDescription:"Fuckin' Prick",
+var grumpyCat = {
+	petName:"Grumpy Cat",
+	petImage: "photos/pet_grumpyCat.png",
+	petDescription:"A grumpy cat.",
 	petsReceived: 0,
-	petPetAction: function() { console.log('Ornstein Pet!'); }
+	petPetAction: function() { console.log('Grumpy Cat Pet!'); }
 };
 
 
@@ -68,7 +68,7 @@ document.getElementById("PetPetPointsMultiplierCounter").innerHTML = petPetPoint
 document.getElementById("currentPetDisplay").innerHTML = currentPet.petName;
 document.getElementById("currentPetPetsCounter").innerHTML = currentPet.petsReceived;
 
-document.getElementById("petImage").src = petImage.src = 'skeleton.jpg';
+document.getElementById("petImage").src = petImage.src = 'photos/pet_grumpyCat.png';
 
 document.getElementById("petNameDisplay").innerHTML = currentPet.petName;
 document.getElementById("petDescription").innerHTML = currentPet.petDescription;
@@ -337,24 +337,24 @@ function petChange(PCpetName, PCpetImage, PCpetDescription, PCpetsReceived,
 
 function petChangeS(PCSpet) {
 	
-	if(currentPet.petName === 'Skeleton') {
-		c('Pets to Skelly');
-		skeleton.petsReceived = currentPet.petsReceived;
+	if(currentPet.petName === 'Grumpy Cat') {
+		c('Pets to Grumpy Cat');
+		grumpyCat.petsReceived = currentPet.petsReceived;
 	}
 		
-	if(currentPet.petName === 'Artorias') {
-		c('Pets to Arty');
-		artorias.petsReceived = currentPet.petsReceived;
+	if(currentPet.petName === 'Dog') {
+		c('Pets to Dog');
+		dog.petsReceived = currentPet.petsReceived;
 	}
 	
-	if(currentPet.petName === 'Ornstein') {
-		c('Pets to Orny');
-		ornstein.petsReceived = currentPet.petsReceived;
+	if(currentPet.petName === 'Fish') {
+		c('Pets to Fish');
+		fish.petsReceived = currentPet.petsReceived;
 	}
 	
-	if(currentPet.petName === 'Siegward') {
-		c('Pets to Siegs');
-		siegward.petsReceived = currentPet.petsReceived;
+	if(currentPet.petName === 'Bird') {
+		c('Pets to Bird');
+		bird.petsReceived = currentPet.petsReceived;
 	}
 	
 	currentPet.petsReceived = 
@@ -379,35 +379,35 @@ addEventListener('click', changePet);
 
 function changePet(event) {
 	
-	if (event.target.classList.contains('skeletonButton')) {
+	if (event.target.classList.contains('grumpyCatButton')) {
 		
-		c('Switch to Skelly!');
+		c('Switch to Grumpy Cat!');
 		
-		petChangeS(skeleton);
-		
-	}
-	
-	if (event.target.classList.contains('artoriasButton')) {
-		
-		c('Switch to Arty');
-		
-		petChangeS(artorias);
+		petChangeS(grumpyCat);
 		
 	}
 	
-	if (event.target.classList.contains('siegwardButton')) {
+	if (event.target.classList.contains('dogButton')) {
 		
-		c('Switch to Siegward');
+		c('Switch to Dog');
 		
-		petChangeS(siegward);
+		petChangeS(dog);
 		
 	}
 	
-	if (event.target.classList.contains('ornsteinButton')) {
+	if (event.target.classList.contains('fishButton')) {
 		
-		c('Switch to Ornstein');
+		c('Switch to Fish');
 		
-		petChangeS(ornstein);
+		petChangeS(fish);
+		
+	}
+	
+	if (event.target.classList.contains('birdButton')) {
+		
+		c('Switch to Bird');
+		
+		petChangeS(bird);
 		
 	}
 
