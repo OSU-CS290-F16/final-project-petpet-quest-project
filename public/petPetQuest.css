@@ -1,0 +1,104 @@
+body {
+	margin: 0px;
+	background-color: purple;
+}
+
+header {
+	border-style: solid;
+	border-width: 5px;
+	height: 70px;
+	width: 100%;
+}
+
+
+
+.leftbar {
+	display: inline-block;
+	position: absolute;
+	margin: 0px 50px 0px 0px;
+	border-style: solid;
+	border-width: 10px;
+    width: 15%;
+    height: 100%;
+    float:left;
+}
+
+.rightbar {
+	display: inline-block;
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	border-style: solid;
+	border-width: 10px;
+    width: 15%;
+    height: 100%;
+    right: 0%;
+}
+
+.petArea {
+	display: inline-block
+}
+
+.pettingStats {
+	position: absolute;
+	left: 20%;
+}
+
+.pettingStats div p{
+	display: inline;
+	color: yellow;
+}
+
+#petNameDisplay {
+	position: absolute;
+	color: yellow;
+	top: 27%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+#thePet {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150px, -150px);
+}
+
+#hitboxContainer {
+	width: 300px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+	flex-direciton: row;
+	flex-wrap: wrap;
+}
+
+.hitbox {
+	display: inline-block;
+	position: relative;
+	height: 152px;
+	width: 304px;
+	bottom: 304px;
+}
+
+
+.hitboxVis {
+	border-style: dashed;
+	border-width: 1px;
+	margin: -1px;
+}
+
+#petDescription {
+	position: absolute;
+	color: yellow;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+
+
+
+
