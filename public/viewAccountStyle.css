@@ -1,0 +1,23 @@
+.username{
+	display: flex;
+    flex-wrap: wrap;
+	margin-top: 100px;
+}
+
+.email{
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.password{
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.standard{
+	padding-left: 500px;
+}
+
+.userData{
+	padding-left: 40px;
+}

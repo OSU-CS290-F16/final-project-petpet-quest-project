@@ -104,7 +104,8 @@ main {
 }
 
 .pets{
-   
+	display: flex;
+	flex-wrap: wrap;
     background-color: #ecb4bf;
     width: 800px;
     padding-top: 100px;
