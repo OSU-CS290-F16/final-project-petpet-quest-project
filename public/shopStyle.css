@@ -159,6 +159,15 @@ main {
 	border: none;
 }
 
+
+.options_2 .sold{
+	display: none;
+	z-index: 1;
+	position: absolute;
+	background: none;
+	border: none;
+}
+
 .storefront_footer{
   display: flex;
   padding: 10px 10px 20px 10px;
@@ -174,12 +183,12 @@ main {
 	position: relative;
 }
 
-.prev{
+#prev{
 	border-radius: 5px;
 	border-color: grey;
 }
 
-.next{
+ #next{
 	border-radius: 5px;
 	border-color: grey;
 }
